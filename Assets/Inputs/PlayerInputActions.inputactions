@@ -41,13 +41,40 @@
             ]
         },
         {
-            "name": "Car",
-            "id": "2795967a-a409-4672-92c0-6c97059f8741",
+            "name": "Dog",
+            "id": "c3c8e250-7fba-4018-a039-9110f8a06527",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Bark",
                     "type": "Button",
-                    "id": "53fd5afa-f570-4e15-aabf-7adfdbb662c2",
+                    "id": "d6f1360c-ba33-402b-a29b-c244e59775d8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "1ce76a3a-b6f4-4fa3-9ded-3e9ccc93a07b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "c26d80f5-0a31-45a0-b446-66ad6722b07c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Die",
+                    "type": "Button",
+                    "id": "21f28468-c7f4-4154-b7aa-6b1554ed0816",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -57,14 +84,113 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "1004c143-100b-413c-8460-f60c7d3278c5",
-                    "path": "",
+                    "id": "14f1854a-eae4-4d74-a2c0-8ddedbb0fe71",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Bark",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "634a2589-15e5-4a90-a668-aadfda9724d9",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "Hold(duration=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "d94785f3-93f7-443b-a056-19a26246d8bd",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "ae22a26c-0a02-4046-a8a0-8070dc048f52",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "7f8bb461-87f4-4087-acc3-46f18cb56afc",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "f293450f-d87a-4731-ad27-ea17f52e3fe3",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "519f4a4c-76b3-421e-ae60-18732a176497",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Button With One Modifier",
+                    "id": "01ea8995-c8ea-4b1f-aa19-59128f0bbf79",
+                    "path": "ButtonWithOneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Die",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Modifier",
+                    "id": "d2e6fd72-7c79-4a96-93c6-513229360771",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Die",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Button",
+                    "id": "528d8dfd-44c5-44c4-b944-c59b7020d226",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Die",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
